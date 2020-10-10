@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62181D472531592E0088E027 /* signup1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62181D462531592E0088E027 /* signup1VC.swift */; };
 		62551C42253064F9009C150A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62551C41253064F9009C150A /* AppDelegate.swift */; };
 		62551C44253064F9009C150A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62551C43253064F9009C150A /* SceneDelegate.swift */; };
-		62551C46253064F9009C150A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62551C45253064F9009C150A /* ViewController.swift */; };
+		62551C46253064F9009C150A /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62551C45253064F9009C150A /* loginVC.swift */; };
 		62551C49253064F9009C150A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62551C47253064F9009C150A /* Main.storyboard */; };
 		62551C4C253064F9009C150A /* binari.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62551C4A253064F9009C150A /* binari.xcdatamodeld */; };
 		62551C4E253064FB009C150A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62551C4D253064FB009C150A /* Assets.xcassets */; };
@@ -17,10 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62181D462531592E0088E027 /* signup1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signup1VC.swift; sourceTree = "<group>"; };
 		62551C3E253064F9009C150A /* binari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = binari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62551C41253064F9009C150A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62551C43253064F9009C150A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		62551C45253064F9009C150A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		62551C45253064F9009C150A /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
 		62551C48253064F9009C150A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62551C4B253064F9009C150A /* binari.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = binari.xcdatamodel; sourceTree = "<group>"; };
 		62551C4D253064FB009C150A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62181D492531594E0088E027 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				62551C45253064F9009C150A /* loginVC.swift */,
+				62181D462531592E0088E027 /* signup1VC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		62551C35253064F9009C150A = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +69,9 @@
 		62551C40253064F9009C150A /* binari */ = {
 			isa = PBXGroup;
 			children = (
+				62181D492531594E0088E027 /* Controllers */,
 				62551C41253064F9009C150A /* AppDelegate.swift */,
 				62551C43253064F9009C150A /* SceneDelegate.swift */,
-				62551C45253064F9009C150A /* ViewController.swift */,
 				62551C47253064F9009C150A /* Main.storyboard */,
 				62551C4D253064FB009C150A /* Assets.xcassets */,
 				62551C4F253064FB009C150A /* LaunchScreen.storyboard */,
@@ -141,7 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				62551C4C253064F9009C150A /* binari.xcdatamodeld in Sources */,
-				62551C46253064F9009C150A /* ViewController.swift in Sources */,
+				62551C46253064F9009C150A /* loginVC.swift in Sources */,
+				62181D472531592E0088E027 /* signup1VC.swift in Sources */,
 				62551C42253064F9009C150A /* AppDelegate.swift in Sources */,
 				62551C44253064F9009C150A /* SceneDelegate.swift in Sources */,
 			);
