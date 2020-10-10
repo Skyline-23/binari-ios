@@ -148,16 +148,29 @@
                                     <action selector="perbtnclicked:" destination="Q7x-gT-VXc" eventType="touchUpInside" id="UaI-Xh-dl8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8p-hU-DEv">
+                                <rect key="frame" x="127" y="588" width="121" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="5Os-wC-mxL"/>
+                                    <constraint firstAttribute="width" constant="121" id="jSO-sR-VpM"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="backbtn"/>
+                                <connections>
+                                    <action selector="backbtnclicked:" destination="Q7x-gT-VXc" eventType="touchUpInside" id="d9C-cW-LBk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bu0-js-gPi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="maW-r1-9oz" firstAttribute="centerX" secondItem="XL3-Tv-dUp" secondAttribute="centerX" id="4e9-jz-Jol"/>
                             <constraint firstItem="MjF-hx-M3E" firstAttribute="top" secondItem="Bu0-js-gPi" secondAttribute="top" constant="237" id="9fY-Vk-G7m"/>
+                            <constraint firstItem="s8p-hU-DEv" firstAttribute="centerX" secondItem="XL3-Tv-dUp" secondAttribute="centerX" id="D8w-Cv-eh6"/>
                             <constraint firstItem="Bu0-js-gPi" firstAttribute="trailing" secondItem="tR8-1s-NPE" secondAttribute="trailing" constant="39" id="DGS-1t-hhU"/>
                             <constraint firstItem="gwE-Td-Shl" firstAttribute="top" secondItem="XL3-Tv-dUp" secondAttribute="topMargin" constant="179" id="Fi6-HZ-0Y3"/>
                             <constraint firstItem="gwE-Td-Shl" firstAttribute="centerX" secondItem="XL3-Tv-dUp" secondAttribute="centerX" id="QRg-Kt-1Ci"/>
                             <constraint firstItem="tR8-1s-NPE" firstAttribute="top" secondItem="Bu0-js-gPi" secondAttribute="top" constant="237" id="SOk-Qr-hNU"/>
+                            <constraint firstItem="s8p-hU-DEv" firstAttribute="top" secondItem="Bu0-js-gPi" secondAttribute="top" constant="544" id="c0y-Ob-jTI"/>
                             <constraint firstItem="LoM-KU-vx1" firstAttribute="top" secondItem="Bu0-js-gPi" secondAttribute="top" constant="500" id="ewi-jG-YV2"/>
                             <constraint firstItem="maW-r1-9oz" firstAttribute="top" secondItem="Bu0-js-gPi" secondAttribute="top" constant="67.890000000000001" id="q08-Gy-3zO"/>
                             <constraint firstItem="LoM-KU-vx1" firstAttribute="centerX" secondItem="XL3-Tv-dUp" secondAttribute="centerX" id="xiX-rt-gsm"/>
@@ -176,10 +189,10 @@
             </objects>
             <point key="canvasLocation" x="2732" y="679"/>
         </scene>
-        <!--View Controller-->
+        <!--Persignup1VC-->
         <scene sceneID="gPo-cJ-btg">
             <objects>
-                <viewController storyboardIdentifier="story1" id="BfY-Bc-tsE" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="story1" id="BfY-Bc-tsE" customClass="persignup1VC" customModule="binari" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="udW-aR-WDj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -191,9 +204,47 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="binarilogo2" translatesAutoresizingMaskIntoConstraints="NO" id="9MH-Xj-nkJ">
+                                <rect key="frame" x="138.66666666666666" y="112" width="98" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44.07" id="RFg-iV-6eS"/>
+                                    <constraint firstAttribute="width" constant="98" id="jtl-eA-lAr"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHb-DT-gp2">
+                                <rect key="frame" x="53.666666666666657" y="544" width="268" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="268" id="NqK-tq-wGH"/>
+                                    <constraint firstAttribute="height" constant="39" id="Nqu-PE-IqT"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="nextbtn"/>
+                                <connections>
+                                    <action selector="nextbtnclicked:" destination="Q7x-gT-VXc" eventType="touchUpInside" id="iV6-TY-A7O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4e-1z-ANz">
+                                <rect key="frame" x="127" y="588" width="121" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="Fsc-U6-Rm5"/>
+                                    <constraint firstAttribute="height" constant="15" id="LMR-l4-p9U"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="backbtn"/>
+                                <connections>
+                                    <action selector="backbtnclicked:" destination="Q7x-gT-VXc" eventType="touchUpInside" id="0dD-bt-tpL"/>
+                                    <action selector="backbtnclicked:" destination="BfY-Bc-tsE" eventType="touchUpInside" id="Vla-Qj-RJU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jLb-cr-03P"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="g4e-1z-ANz" firstAttribute="top" secondItem="jLb-cr-03P" secondAttribute="top" constant="544" id="MP1-vS-YjV"/>
+                            <constraint firstItem="mHb-DT-gp2" firstAttribute="top" secondItem="jLb-cr-03P" secondAttribute="top" constant="500" id="ZMZ-D7-ciE"/>
+                            <constraint firstItem="g4e-1z-ANz" firstAttribute="centerX" secondItem="udW-aR-WDj" secondAttribute="centerX" id="byv-Wn-Eo2"/>
+                            <constraint firstItem="9MH-Xj-nkJ" firstAttribute="centerX" secondItem="udW-aR-WDj" secondAttribute="centerX" id="np3-9q-dkS"/>
+                            <constraint firstItem="mHb-DT-gp2" firstAttribute="centerX" secondItem="udW-aR-WDj" secondAttribute="centerX" id="uB1-Ch-4u8"/>
+                            <constraint firstItem="9MH-Xj-nkJ" firstAttribute="top" secondItem="jLb-cr-03P" secondAttribute="top" constant="67.890000000000001" id="yGI-L0-daf"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oAq-AF-1EW"/>
                 </viewController>
@@ -201,10 +252,10 @@
             </objects>
             <point key="canvasLocation" x="3700" y="372"/>
         </scene>
-        <!--View Controller-->
+        <!--DocsignupVC1-->
         <scene sceneID="Ef5-0D-obS">
             <objects>
-                <viewController storyboardIdentifier="story2" id="8fl-8S-je4" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="story2" id="8fl-8S-je4" customClass="docsignupVC1" customModule="binari" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e4z-cp-gEO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -216,9 +267,48 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="binarilogo2" translatesAutoresizingMaskIntoConstraints="NO" id="5Ba-X8-6mm">
+                                <rect key="frame" x="138.66666666666666" y="112" width="98" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44.07" id="Rpn-kG-abp"/>
+                                    <constraint firstAttribute="width" constant="98" id="Utu-Lm-8jj"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDv-O6-0Ix">
+                                <rect key="frame" x="53.666666666666657" y="544" width="268" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="2kd-LG-t8O"/>
+                                    <constraint firstAttribute="width" constant="268" id="beD-6a-Kdn"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="nextbtn"/>
+                                <connections>
+                                    <action selector="nextbtnclicked:" destination="Q7x-gT-VXc" eventType="touchUpInside" id="RfM-0R-zM3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYH-Lj-MkP">
+                                <rect key="frame" x="127" y="588" width="121" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="7rR-Ze-H4I"/>
+                                    <constraint firstAttribute="height" constant="15" id="dOw-dz-iIC"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="backbtn"/>
+                                <connections>
+                                    <action selector="backbtnclicked:" destination="Q7x-gT-VXc" eventType="touchUpInside" id="5hD-za-bC1"/>
+                                    <action selector="backbtnclicked:" destination="BfY-Bc-tsE" eventType="touchUpInside" id="V91-8h-JTY"/>
+                                    <action selector="backbtnclicked:" destination="8fl-8S-je4" eventType="touchUpInside" id="sbD-Km-6C3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3nU-gM-GnH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zYH-Lj-MkP" firstAttribute="top" secondItem="3nU-gM-GnH" secondAttribute="top" constant="544" id="CF0-b3-5RB"/>
+                            <constraint firstItem="zYH-Lj-MkP" firstAttribute="centerX" secondItem="e4z-cp-gEO" secondAttribute="centerX" id="LhU-6z-jGq"/>
+                            <constraint firstItem="5Ba-X8-6mm" firstAttribute="centerX" secondItem="e4z-cp-gEO" secondAttribute="centerX" id="Vc1-uP-jw9"/>
+                            <constraint firstItem="5Ba-X8-6mm" firstAttribute="top" secondItem="3nU-gM-GnH" secondAttribute="top" constant="67.890000000000001" id="bz7-wL-LAl"/>
+                            <constraint firstItem="HDv-O6-0Ix" firstAttribute="centerX" secondItem="e4z-cp-gEO" secondAttribute="centerX" id="fWp-85-dg1"/>
+                            <constraint firstItem="HDv-O6-0Ix" firstAttribute="top" secondItem="3nU-gM-GnH" secondAttribute="top" constant="500" id="if7-eL-cK7"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="g0r-3z-pyQ"/>
                 </viewController>
@@ -248,6 +338,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backbtn" width="121" height="15"/>
         <image name="binarilogo" width="94" height="110"/>
         <image name="binarilogo2" width="99" height="44.333332061767578"/>
         <image name="docbtn1" width="136" height="200"/>

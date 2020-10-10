@@ -35,5 +35,8 @@ class signup1VC: UIViewController {
             self.performSegue(withIdentifier: "signupforper", sender: self)
         }
     }
+    @IBAction func backbtnclicked(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
     
 }
