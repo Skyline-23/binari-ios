@@ -126,7 +126,7 @@
                                     <action selector="nextbtnclicked:" destination="Q7x-gT-VXc" eventType="touchUpInside" id="Ntz-Bw-cyZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tR8-1s-NPE">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tR8-1s-NPE">
                                 <rect key="frame" x="202" y="281" width="134" height="198"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="198" id="P2Z-rn-f1n"/>
@@ -137,7 +137,7 @@
                                     <action selector="docbtnclicked:" destination="Q7x-gT-VXc" eventType="touchUpInside" id="Mx9-ux-hsY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MjF-hx-M3E">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MjF-hx-M3E">
                                 <rect key="frame" x="39" y="281" width="134" height="198"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="134" id="7RP-rz-PSz"/>
@@ -197,13 +197,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1번 화면" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bz5-1z-UKs">
-                                <rect key="frame" x="166" y="418" width="56" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="binarilogo2" translatesAutoresizingMaskIntoConstraints="NO" id="9MH-Xj-nkJ">
                                 <rect key="frame" x="138.66666666666666" y="112" width="98" height="44"/>
                                 <constraints>
@@ -218,9 +211,6 @@
                                     <constraint firstAttribute="height" constant="39" id="Nqu-PE-IqT"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="nextbtn"/>
-                                <connections>
-                                    <action selector="nextbtnclicked:" destination="Q7x-gT-VXc" eventType="touchUpInside" id="iV6-TY-A7O"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4e-1z-ANz">
                                 <rect key="frame" x="127" y="588" width="121" height="15"/>
@@ -250,7 +240,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rzc-B3-hBb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3700" y="372"/>
+            <point key="canvasLocation" x="3700" y="371.67487684729065"/>
         </scene>
         <!--DocsignupVC1-->
         <scene sceneID="Ef5-0D-obS">
