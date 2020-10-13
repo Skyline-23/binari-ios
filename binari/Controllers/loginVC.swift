@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class loginVC: UIViewController {
     @IBOutlet weak var Idtextfield: UITextField!
@@ -34,5 +35,24 @@ class loginVC: UIViewController {
             PWtextfield.layer.cornerRadius = 10.0
             PWtextfield.attributedPlaceholder = NSAttributedString(string: "비밀번호를 입력하세요", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
         }
+    @IBAction func loginbtnclicked(_ sender: Any) {
+        let url = "http://10.80.163.197:8080/api/auth/login"
+        let id = Idtextfield.text
+        let pw = PWtextfield.text
+        
+        let param: Parameters = [
+            "id": id!,
+            "pw": pw!
+        ]
+        
+        let alamo = AF.request(url, method: .post, parameters: param, encoding: JSONEncoding.default)
+        alamo.responseJSON() { response in
+            print(response.value! as? [String: Any])
+//            let alart = UIAlertController(title: nil, message: response.value! as? [String: Any], preferredStyle: .alert)
+//            alart.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
+//            self.present(alart, animated: true)
+//            return
+        }
+    }
+    
 }
-

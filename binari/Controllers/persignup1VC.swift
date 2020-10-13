@@ -65,4 +65,6 @@ class persignup1VC: UIViewController {
         code.selectedTitleColor = pinkcolor
         self.view.addSubview(code)
     }
+    
+    
 }

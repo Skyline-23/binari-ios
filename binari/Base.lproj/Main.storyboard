@@ -30,6 +30,9 @@
                                     <constraint firstAttribute="width" constant="256" id="gg5-5c-fCO"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="loginbtn"/>
+                                <connections>
+                                    <action selector="loginbtnclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yc3-ag-Hx7"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="아이디를 입력하세요" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZCH-Sd-uIU">
                                 <rect key="frame" x="53.666666666666657" y="291" width="268" height="43"/>
