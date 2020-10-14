@@ -45,13 +45,15 @@ class loginVC: UIViewController {
             "pw": pw!
         ]
         
-        let alamo = AF.request(url, method: .post, parameters: param, encoding: JSONEncoding.default)
+        let alamo = AF.request( url, method: .post, parameters: param, encoding: JSONEncoding.default)
         alamo.responseJSON() { response in
-            print(response.value! as? [String: Any])
-//            let alart = UIAlertController(title: nil, message: response.value! as? [String: Any], preferredStyle: .alert)
-//            alart.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
-//            self.present(alart, animated: true)
-//            return
+            switch response.result {
+            case .success(let value):
+                let value = response.value as? [String: Any]
+                print(value)
+            case .failure(_):
+                print("error")
+            }
         }
     }
     
