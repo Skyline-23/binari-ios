@@ -36,6 +36,19 @@ class loginVC: UIViewController {
             PWtextfield.attributedPlaceholder = NSAttributedString(string: "비밀번호를 입력하세요", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
         }
     @IBAction func loginbtnclicked(_ sender: Any) {
+        
+        guard self.Idtextfield.text?.isEmpty == false else {
+            let alart = UIAlertController(title: nil, message: "아이디를 입력해주세요.", preferredStyle: .alert)
+            alart.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
+            self.present(alart, animated: true)
+            return
+        }
+        guard self.PWtextfield.text?.isEmpty == false else {
+            let alart = UIAlertController(title: nil, message: "비밀번호를 입력해주세요.", preferredStyle: .alert)
+            alart.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
+            self.present(alart, animated: true)
+            return
+        }
         let url = "http://10.80.163.197:8080/api/auth/login"
         let id = Idtextfield.text
         let pw = PWtextfield.text
