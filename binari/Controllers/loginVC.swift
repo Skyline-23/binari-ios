@@ -46,17 +46,20 @@ class loginVC: UIViewController {
         ]
         
         let alamo = AF.request( url, method: .post, parameters: param, encoding: JSONEncoding.default)
+        let configuration = URLSessionConfiguration.default
+        // timeout시간 설정
+        configuration.timeoutIntervalForRequest = 10
         alamo.responseJSON() { response in
             switch response.result {
             case .success(let value):
                 let value = response.value as? [String: Any]
-                let alart = UIAlertController(title: nil, message: "로그인 성공", preferredStyle: .alert)
+                let alart = UIAlertController(title: nil, message: "서버통신 성공", preferredStyle: .alert)
                 alart.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
                 self.present(alart, animated: true)
                 return
                 print(value)
             case .failure(_):
-                let alart = UIAlertController(title: nil, message: "로그인 실패", preferredStyle: .alert)
+                let alart = UIAlertController(title: nil, message: "네트워크를 다시 확인해주세요", preferredStyle: .alert)
                 alart.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
                 self.present(alart, animated: true)
                 return
