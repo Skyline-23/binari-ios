@@ -214,6 +214,9 @@
                                     <constraint firstAttribute="height" constant="39" id="Nqu-PE-IqT"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="nextbtn"/>
+                                <connections>
+                                    <action selector="submitbtnclicked:" destination="BfY-Bc-tsE" eventType="touchUpInside" id="M6X-T6-Xgv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4e-1z-ANz">
                                 <rect key="frame" x="127" y="588" width="121" height="15"/>

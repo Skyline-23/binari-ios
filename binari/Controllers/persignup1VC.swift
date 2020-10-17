@@ -41,6 +41,7 @@ class persignup1VC: UIViewController {
         nameTF.lineColor = lightGreyColor
         nameTF.selectedLineColor = pinkcolor
         nameTF.selectedTitleColor = pinkcolor
+        nameTF.tag = 1
         self.view.addSubview(nameTF)
     }
     
@@ -52,6 +53,7 @@ class persignup1VC: UIViewController {
         p_number.lineColor = lightGreyColor
         p_number.selectedLineColor = pinkcolor
         p_number.selectedTitleColor = pinkcolor
+        p_number.tag = 2
         self.view.addSubview(p_number)
     }
     
@@ -63,7 +65,19 @@ class persignup1VC: UIViewController {
         code.lineColor = lightGreyColor
         code.selectedLineColor = pinkcolor
         code.selectedTitleColor = pinkcolor
+        code.tag = 3
         self.view.addSubview(code)
+    }
+    @IBAction func submitbtnclicked(_ sender: Any) {
+        var data = self.view.viewWithTag(1) as! UITextField
+        let name : String = data.text!
+        data = self.view.viewWithTag(2) as! UITextField
+        let p_number : String = data.text!
+        data = self.view.viewWithTag(3) as! UITextField
+        let code : String = data.text!
+        print("이름 : \(name)")
+        print("전화번호 : \(p_number)")
+        print("인증번호 : \(code)")
     }
     
     

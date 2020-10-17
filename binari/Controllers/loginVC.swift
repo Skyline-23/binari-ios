@@ -74,7 +74,6 @@ class loginVC: UIViewController {
                         return
                     }
                 }
-//                print(value)
             case .failure(_):
                 let alart = UIAlertController(title: nil, message: "네트워크를 다시 확인해주세요", preferredStyle: .alert)
                 alart.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
@@ -83,5 +82,4 @@ class loginVC: UIViewController {
             }
         }
     }
-    
 }
