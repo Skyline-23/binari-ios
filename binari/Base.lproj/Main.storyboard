@@ -248,6 +248,44 @@
             </objects>
             <point key="canvasLocation" x="3700" y="371.67487684729065"/>
         </scene>
+        <!--PersignupVC2-->
+        <scene sceneID="tfb-WX-y41">
+            <objects>
+                <viewController storyboardIdentifier="persignup2VC" id="KwA-VE-DME" customClass="persignupVC2" customModule="binari" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="48X-d3-dG7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="complete_register" translatesAutoresizingMaskIntoConstraints="NO" id="XSk-oz-aFg">
+                                <rect key="frame" x="93" y="189" width="189" height="233.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="233.61000000000001" id="HGh-mA-9Nf"/>
+                                    <constraint firstAttribute="width" constant="189.25999999999999" id="tnT-hM-ybz"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="complete lbl" translatesAutoresizingMaskIntoConstraints="NO" id="Pjd-4E-MPK">
+                                <rect key="frame" x="107.66666666666669" y="555" width="160" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="Lwz-xN-YPM"/>
+                                    <constraint firstAttribute="width" constant="160" id="StA-GJ-Q56"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pHT-t9-PJV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XSk-oz-aFg" firstAttribute="top" secondItem="pHT-t9-PJV" secondAttribute="top" constant="145" id="6cf-zb-rHm"/>
+                            <constraint firstItem="Pjd-4E-MPK" firstAttribute="top" secondItem="pHT-t9-PJV" secondAttribute="top" constant="511" id="dM7-40-f2i"/>
+                            <constraint firstItem="Pjd-4E-MPK" firstAttribute="centerX" secondItem="48X-d3-dG7" secondAttribute="centerX" id="n5P-oU-V2B"/>
+                            <constraint firstItem="XSk-oz-aFg" firstAttribute="centerX" secondItem="48X-d3-dG7" secondAttribute="centerX" id="t9x-71-PJd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DPS-VY-hXx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tww-J4-ofI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4521" y="372"/>
+        </scene>
         <!--DocsignupVC1-->
         <scene sceneID="Ef5-0D-obS">
             <objects>
@@ -337,6 +375,8 @@
         <image name="backbtn" width="121" height="15"/>
         <image name="binarilogo" width="94" height="110"/>
         <image name="binarilogo2" width="99" height="44.333332061767578"/>
+        <image name="complete lbl" width="160" height="19"/>
+        <image name="complete_register" width="191.33332824707031" height="238.33332824707031"/>
         <image name="docbtn1" width="136" height="200"/>
         <image name="loginbtn" width="256" height="39"/>
         <image name="nextbtn" width="268" height="39"/>

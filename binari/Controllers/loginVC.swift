@@ -61,7 +61,7 @@ class loginVC: UIViewController {
         let alamo = AF.request( url, method: .post, parameters: param, encoding: JSONEncoding.default)
         let configuration = URLSessionConfiguration.default
         // timeout시간 설정
-        configuration.timeoutIntervalForRequest = 10
+        configuration.timeoutIntervalForRequest = TimeInterval(1)
         alamo.responseJSON() { response in
             switch response.result {
             case .success(let value):
