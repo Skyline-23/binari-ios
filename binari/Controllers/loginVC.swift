@@ -65,12 +65,16 @@ class loginVC: UIViewController {
         alamo.responseJSON() { response in
             switch response.result {
             case .success(let value):
-                let value = response.value as? [String: Any]
-                let alart = UIAlertController(title: nil, message: "서버통신 성공", preferredStyle: .alert)
-                alart.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
-                self.present(alart, animated: true)
-                return
-                print(value)
+                if let nsDic = value as? NSDictionary{
+                    print(nsDic)
+                    if let message = nsDic["message"] as? String {
+                        let alart = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+                        alart.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
+                        self.present(alart, animated: true)
+                        return
+                    }
+                }
+//                print(value)
             case .failure(_):
                 let alart = UIAlertController(title: nil, message: "네트워크를 다시 확인해주세요", preferredStyle: .alert)
                 alart.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
