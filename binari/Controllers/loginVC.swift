@@ -16,6 +16,9 @@ class loginVC: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "loginbg.png")!)
         buildtextfield()
+        Idtextfield.keyboardType = .asciiCapable
+        PWtextfield.keyboardType = .asciiCapable
+        
     }
     
     //터치가 시작됬을 경우, 키보드를 닫음

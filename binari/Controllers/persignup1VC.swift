@@ -66,7 +66,7 @@ class persignup1VC: UIViewController, UITextFieldDelegate {
     }
     
     func email_TF() {
-        let email = SkyFloatingLabelTextField(frame: CGRect(x: (self.view.frame.width - 268) / 2, y: 288 , width: 268, height: 45))
+        let email = SkyFloatingLabelTextField(frame: CGRect(x: (self.view.frame.width - 268) / 2, y: 283 , width: 268, height: 45))
         email.placeholder = "이메일 입력"
         email.title = "이메일"
         email.textColor = darkGreyColor
@@ -76,13 +76,14 @@ class persignup1VC: UIViewController, UITextFieldDelegate {
         email.autocapitalizationType = UITextAutocapitalizationType.none
         email.autocorrectionType = UITextAutocorrectionType.no
         email.textContentType = UITextContentType.emailAddress
+        email.keyboardType = .asciiCapable
         email.delegate = self
         email.tag = 3
         self.view.addSubview(email)
     }
     
     func id_Tf() {
-        let Id = SkyFloatingLabelTextField(frame: CGRect(x: (self.view.frame.width - 268) / 2, y: 341 , width: 268, height: 45))
+        let Id = SkyFloatingLabelTextField(frame: CGRect(x: (self.view.frame.width - 268) / 2, y: 336 , width: 268, height: 45))
         Id.placeholder = "아이디 입력"
         Id.title = "아이디"
         Id.textColor = darkGreyColor
@@ -92,12 +93,13 @@ class persignup1VC: UIViewController, UITextFieldDelegate {
         Id.autocapitalizationType = UITextAutocapitalizationType.none
         Id.autocorrectionType = UITextAutocorrectionType.no
         Id.textContentType = UITextContentType.nickname
+        Id.keyboardType = .asciiCapable
         Id.tag = 4
         self.view.addSubview(Id)
     }
     
     func pw_TF() {
-        let pw = SkyFloatingLabelTextField(frame: CGRect(x: (self.view.frame.width - 268) / 2, y: 394 , width: 268, height: 45))
+        let pw = SkyFloatingLabelTextField(frame: CGRect(x: (self.view.frame.width - 268) / 2, y: 389 , width: 268, height: 45))
         pw.placeholder = "비밀번호 입력"
         pw.title = "비밀번호"
         pw.textColor = darkGreyColor
@@ -107,15 +109,16 @@ class persignup1VC: UIViewController, UITextFieldDelegate {
         pw.autocapitalizationType = UITextAutocapitalizationType.none
         pw.autocorrectionType = UITextAutocorrectionType.no
         pw.textContentType = UITextContentType.password
+        pw.keyboardType = .asciiCapable
         pw.isSecureTextEntry = true
         pw.tag = 6
         self.view.addSubview(pw)
     }
     
     func check_pw_TF() {
-        let check_pw = SkyFloatingLabelTextField(frame: CGRect(x: (self.view.frame.width - 268) / 2, y: 447 , width: 268, height: 45))
-        check_pw.placeholder = "비밀번호 입력"
-        check_pw.title = "비밀번호"
+        let check_pw = SkyFloatingLabelTextField(frame: CGRect(x: (self.view.frame.width - 268) / 2, y: 442 , width: 268, height: 45))
+        check_pw.placeholder = "비밀번호 확인"
+        check_pw.title = "비밀번호 확인"
         check_pw.textColor = darkGreyColor
         check_pw.lineColor = lightGreyColor
         check_pw.selectedLineColor = pinkcolor
@@ -123,6 +126,7 @@ class persignup1VC: UIViewController, UITextFieldDelegate {
         check_pw.autocapitalizationType = UITextAutocapitalizationType.none
         check_pw.autocorrectionType = UITextAutocorrectionType.no
         check_pw.textContentType = UITextContentType.password
+        check_pw.keyboardType = .asciiCapable
         check_pw.isSecureTextEntry = true
         check_pw.tag = 5
         self.view.addSubview(check_pw)
@@ -149,20 +153,15 @@ class persignup1VC: UIViewController, UITextFieldDelegate {
         let name : String = data.text!
         data = self.view.viewWithTag(2) as! UITextField
         let city : String = data.text!
-        data = self.view.viewWithTag(3) as! UITextField
-        let email : String = data.text!
+        let email_data = self.view.viewWithTag(3) as! UITextField
+        let email : String = email_data.text!
         data = self.view.viewWithTag(4) as! UITextField
         let Id : String = data.text!
         data = self.view.viewWithTag(5) as! UITextField
         let pw : String = data.text!
         data = self.view.viewWithTag(6) as! UITextField
         let check_pw : String = data.text!
-        if (pw != check_pw) {
-            let alart = UIAlertController(title: nil, message: "비밀번호가 일치하지 않습니다!", preferredStyle: .alert)
-            alart.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
-            self.present(alart, animated: true)
-            return
-        }
+        
         if (name == "" || city == "" || email == "" || Id == "" || pw == "" || check_pw == "") {
             let alart = UIAlertController(title: nil, message: "모든 항목을 채워주세요!", preferredStyle: .alert)
             alart.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
@@ -170,7 +169,21 @@ class persignup1VC: UIViewController, UITextFieldDelegate {
             return
         }
         
-        let url = "http://10.80.161.119:8000/api/auth/register"
+        if (pw != check_pw) {
+            let alart = UIAlertController(title: nil, message: "비밀번호가 일치하지 않습니다!", preferredStyle: .alert)
+            alart.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
+            self.present(alart, animated: true)
+            return
+        }
+        
+        if (CFStringGetLength(email as CFString) < 3 || !email.contains("@") || !email.contains(".")) {
+            let alart = UIAlertController(title: nil, message: "올바른 이메일을 입력해주세요!", preferredStyle: .alert)
+            alart.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
+            self.present(alart, animated: true)
+            return
+        }
+        
+        let url = "http://10.80.163.197:8080/api/auth/register"
         
         let param: Parameters = [
             "id": Id,
@@ -190,14 +203,16 @@ class persignup1VC: UIViewController, UITextFieldDelegate {
                 if let nsDic = value as? NSDictionary{
                     print(nsDic)
                     if let message = nsDic["message"] as? String {
+                        if (message == "회원가입 성공!") {
+                            self.performSegue(withIdentifier: "complete_signup", sender: self)
+                        }
+                        else {
                         let alart = UIAlertController(title: nil, message: message, preferredStyle: .alert)
                         alart.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
                         self.present(alart, animated: true)
                         return
+                        }
                     }
-                    let nextVC = self.storyboard?.instantiateViewController(identifier: "persignupVC2")
-                    nextVC?.modalTransitionStyle = .coverVertical
-                    self.present(nextVC!, animated: true, completion: nil)
                 }
                 
             case .failure(_):

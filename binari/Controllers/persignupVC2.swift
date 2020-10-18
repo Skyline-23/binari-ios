@@ -11,12 +11,13 @@ class persignupVC2: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        sleep(3)
-        self.navigationController?.popToRootViewController(animated: false)
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func backbtnclicked(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 

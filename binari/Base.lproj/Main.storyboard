@@ -3,6 +3,7 @@
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -243,6 +244,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oAq-AF-1EW"/>
+                    <connections>
+                        <segue destination="KwA-VE-DME" kind="show" identifier="complete_signup" id="ulj-8r-oQw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rzc-B3-hBb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -251,7 +255,7 @@
         <!--PersignupVC2-->
         <scene sceneID="tfb-WX-y41">
             <objects>
-                <viewController storyboardIdentifier="persignup2VC" id="KwA-VE-DME" customClass="persignupVC2" customModule="binari" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="persignupVC2" id="KwA-VE-DME" customClass="persignupVC2" customModule="binari" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="48X-d3-dG7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -270,12 +274,29 @@
                                     <constraint firstAttribute="width" constant="160" id="StA-GJ-Q56"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a25-7F-l8L">
+                                <rect key="frame" x="315" y="59" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="jou-2Q-9iR"/>
+                                    <constraint firstAttribute="height" constant="50" id="mGi-9q-gme"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="0.50588235290000005" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="xmark.circle" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="backbtnclicked:" destination="KwA-VE-DME" eventType="touchUpInside" id="dbg-9C-Kec"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pHT-t9-PJV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="XSk-oz-aFg" firstAttribute="top" secondItem="pHT-t9-PJV" secondAttribute="top" constant="145" id="6cf-zb-rHm"/>
+                            <constraint firstItem="a25-7F-l8L" firstAttribute="top" secondItem="pHT-t9-PJV" secondAttribute="top" constant="15" id="KXY-6y-Syl"/>
                             <constraint firstItem="Pjd-4E-MPK" firstAttribute="top" secondItem="pHT-t9-PJV" secondAttribute="top" constant="511" id="dM7-40-f2i"/>
+                            <constraint firstItem="pHT-t9-PJV" firstAttribute="trailing" secondItem="a25-7F-l8L" secondAttribute="trailing" constant="10" id="maB-eb-KtT"/>
                             <constraint firstItem="Pjd-4E-MPK" firstAttribute="centerX" secondItem="48X-d3-dG7" secondAttribute="centerX" id="n5P-oU-V2B"/>
                             <constraint firstItem="XSk-oz-aFg" firstAttribute="centerX" secondItem="48X-d3-dG7" secondAttribute="centerX" id="t9x-71-PJd"/>
                         </constraints>
@@ -284,7 +305,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tww-J4-ofI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4521" y="372"/>
+            <point key="canvasLocation" x="4520.8000000000002" y="371.67487684729065"/>
         </scene>
         <!--DocsignupVC1-->
         <scene sceneID="Ef5-0D-obS">
@@ -382,6 +403,7 @@
         <image name="nextbtn" width="268" height="39"/>
         <image name="perbtn2" width="136" height="200"/>
         <image name="signupbtn" width="125" height="15"/>
+        <image name="xmark.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
