@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		620F247F2531E5C20033663D /* persignup1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F247E2531E5C20033663D /* persignup1VC.swift */; };
 		620F24822531E6BD0033663D /* docsignupVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F24812531E6BD0033663D /* docsignupVC1.swift */; };
-		62121BEB253B483D003B7C6F /* persignupVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62121BEA253B483D003B7C6F /* persignupVC2.swift */; };
+		62121BEB253B483D003B7C6F /* persignup2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62121BEA253B483D003B7C6F /* persignup2VC.swift */; };
 		62181D472531592E0088E027 /* signup1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62181D462531592E0088E027 /* signup1VC.swift */; };
 		62551C42253064F9009C150A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62551C41253064F9009C150A /* AppDelegate.swift */; };
 		62551C44253064F9009C150A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62551C43253064F9009C150A /* SceneDelegate.swift */; };
@@ -18,6 +18,7 @@
 		62551C4C253064F9009C150A /* binari.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62551C4A253064F9009C150A /* binari.xcdatamodeld */; };
 		62551C4E253064FB009C150A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62551C4D253064FB009C150A /* Assets.xcassets */; };
 		62551C51253064FB009C150A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62551C4F253064FB009C150A /* LaunchScreen.storyboard */; };
+		62EC842C253DE33100B8EDEF /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC842B253DE33100B8EDEF /* TabBarVC.swift */; };
 		F2C8091A282CDFC944AF2714 /* Pods_binari.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5352BA615FD026F26E9E759C /* Pods_binari.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +26,7 @@
 		5352BA615FD026F26E9E759C /* Pods_binari.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_binari.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		620F247E2531E5C20033663D /* persignup1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = persignup1VC.swift; sourceTree = "<group>"; };
 		620F24812531E6BD0033663D /* docsignupVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = docsignupVC1.swift; sourceTree = "<group>"; };
-		62121BEA253B483D003B7C6F /* persignupVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = persignupVC2.swift; sourceTree = "<group>"; };
+		62121BEA253B483D003B7C6F /* persignup2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = persignup2VC.swift; sourceTree = "<group>"; };
 		62181D462531592E0088E027 /* signup1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signup1VC.swift; sourceTree = "<group>"; };
 		62551C3E253064F9009C150A /* binari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = binari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62551C41253064F9009C150A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +37,7 @@
 		62551C4D253064FB009C150A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62551C50253064FB009C150A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62551C52253064FB009C150A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62EC842B253DE33100B8EDEF /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		9AAD3AEDE7F92195F2BB72F5 /* Pods-binari.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-binari.release.xcconfig"; path = "Target Support Files/Pods-binari/Pods-binari.release.xcconfig"; sourceTree = "<group>"; };
 		EF65A4D3838334FCA01AE3D0 /* Pods-binari.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-binari.debug.xcconfig"; path = "Target Support Files/Pods-binari/Pods-binari.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,8 +68,9 @@
 				62551C45253064F9009C150A /* loginVC.swift */,
 				62181D462531592E0088E027 /* signup1VC.swift */,
 				620F247E2531E5C20033663D /* persignup1VC.swift */,
-				62121BEA253B483D003B7C6F /* persignupVC2.swift */,
+				62121BEA253B483D003B7C6F /* persignup2VC.swift */,
 				620F24812531E6BD0033663D /* docsignupVC1.swift */,
+				62EC842B253DE33100B8EDEF /* TabBarVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -232,8 +235,9 @@
 				62551C46253064F9009C150A /* loginVC.swift in Sources */,
 				62181D472531592E0088E027 /* signup1VC.swift in Sources */,
 				62551C42253064F9009C150A /* AppDelegate.swift in Sources */,
+				62EC842C253DE33100B8EDEF /* TabBarVC.swift in Sources */,
 				62551C44253064F9009C150A /* SceneDelegate.swift in Sources */,
-				62121BEB253B483D003B7C6F /* persignupVC2.swift in Sources */,
+				62121BEB253B483D003B7C6F /* persignup2VC.swift in Sources */,
 				620F24822531E6BD0033663D /* docsignupVC1.swift in Sources */,
 				620F247F2531E5C20033663D /* persignup1VC.swift in Sources */,
 			);

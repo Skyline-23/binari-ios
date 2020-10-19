@@ -1,23 +1,22 @@
 //
-//  persignupVC2.swift
+//  TabBarVC.swift
 //  binari
 //
-//  Created by 김부성 on 10/18/20.
+//  Created by 김부성 on 10/20/20.
 //
 
 import UIKit
 
-class persignupVC2: UIViewController {
+class TabBarVC: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        UITabBar.appearance().tintColor = UIColor(red: 255/255, green: 129/255, blue: 129/255, alpha: 1.0)
+        self.selectedIndex = 2
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func backbtnclicked(_ sender: Any) {
-        self.navigationController?.popToRootViewController(animated: true)
-    }
-    
+
     /*
     // MARK: - Navigation
 

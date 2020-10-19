@@ -68,6 +68,17 @@
                                     <segue destination="Q7x-gT-VXc" kind="show" id="3oy-6x-hJ3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTp-fc-YqH">
+                                <rect key="frame" x="123" y="690" width="129" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.96909628260000003" blue="0.99043687609999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="로그인 성공 임시 버튼">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="sucbtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TkG-VM-V10"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -88,11 +99,108 @@
                     <connections>
                         <outlet property="Idtextfield" destination="ZCH-Sd-uIU" id="SXj-ev-Rbn"/>
                         <outlet property="PWtextfield" destination="AfY-Yt-pmO" id="or1-DL-HBN"/>
+                        <segue destination="c6Q-KH-qGS" kind="show" identifier="login_success" id="UHQ-S5-C1F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1773.913043478261" y="130.58035714285714"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wQ6-zn-VyA">
+            <objects>
+                <viewController id="hGz-fh-zPe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nJu-Zy-4Jp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="FQo-Pt-E2D"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="hospital" selectedImage="hospital" id="s8O-GV-f1C"/>
+                    <navigationItem key="navigationItem" id="t5q-b4-U9H"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YYp-fE-mer" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3431" y="-1402"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lQw-om-So7">
+            <objects>
+                <viewController id="Yfp-79-oqz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oJz-Ix-AkQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Tth-zR-aVY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="calender" id="ETB-8e-dGP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zSs-U5-EZY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1098" y="-1402"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="V0I-W4-zAz">
+            <objects>
+                <viewController id="tsJ-CP-dcy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5tS-Du-OO4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="TKJ-s1-SXi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="blood" id="G93-QW-HOY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k3q-8D-b4K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1839" y="-1402"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="U3g-mc-C0o">
+            <objects>
+                <viewController id="GFp-Ij-rnr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="37Y-Sf-EHV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="2j7-oQ-pox"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="ping" selectedImage="ping" id="GYG-5M-523"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gsV-sV-qcN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4162" y="-1402"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="I0A-sp-2UM">
+            <objects>
+                <viewController id="BMO-Uw-y91" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5JE-rs-fw2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="075-nM-DN8">
+                                <rect key="frame" x="27" y="121" width="86" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="gWJ-0A-Tgb"/>
+                                    <constraint firstAttribute="height" constant="86" id="vQh-38-sWa"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="profile"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4Dd-7k-kjX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="075-nM-DN8" firstAttribute="leading" secondItem="4Dd-7k-kjX" secondAttribute="leading" constant="27" id="7nL-nc-oKh"/>
+                            <constraint firstItem="075-nM-DN8" firstAttribute="top" secondItem="4Dd-7k-kjX" secondAttribute="top" constant="77" id="a3n-bU-xIz"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="house" selectedImage="house" id="p3P-aS-dS8"/>
+                    <navigationItem key="navigationItem" id="bEx-nb-bKY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="thz-3n-1N4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2630" y="-1402"/>
         </scene>
         <!--Signup1VC-->
         <scene sceneID="Jgg-TR-3si">
@@ -191,7 +299,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wi4-Yj-Qm2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2732" y="679"/>
+            <point key="canvasLocation" x="2631" y="1108"/>
         </scene>
         <!--Persignup1VC-->
         <scene sceneID="gPo-cJ-btg">
@@ -250,12 +358,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rzc-B3-hBb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3700" y="371.67487684729065"/>
+            <point key="canvasLocation" x="3710" y="825"/>
         </scene>
-        <!--PersignupVC2-->
+        <!--Persignup2VC-->
         <scene sceneID="tfb-WX-y41">
             <objects>
-                <viewController storyboardIdentifier="persignupVC2" id="KwA-VE-DME" customClass="persignupVC2" customModule="binari" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="persignup2VC" id="KwA-VE-DME" customClass="persignup2VC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="48X-d3-dG7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -305,7 +413,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tww-J4-ofI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4520.8000000000002" y="371.67487684729065"/>
+            <point key="canvasLocation" x="4599" y="825"/>
         </scene>
         <!--DocsignupVC1-->
         <scene sceneID="Ef5-0D-obS">
@@ -369,7 +477,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eeA-dp-yYJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3700" y="1018"/>
+            <point key="canvasLocation" x="3710" y="1567"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wnR-kY-bFm">
@@ -391,17 +499,47 @@
             </objects>
             <point key="canvasLocation" x="863.768115942029" y="130.58035714285714"/>
         </scene>
+        <!--Tab BarVC-->
+        <scene sceneID="JA2-9a-NM5">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="c6Q-KH-qGS" customClass="TabBarVC" customModule="binari" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="oMr-Gs-IZY"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="P21-rM-Mbv">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.98986881969999996" green="0.48671120410000002" blue="0.48626041409999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Yfp-79-oqz" kind="relationship" relationship="viewControllers" id="hUn-BN-9c2"/>
+                        <segue destination="tsJ-CP-dcy" kind="relationship" relationship="viewControllers" id="eRV-wq-9Kx"/>
+                        <segue destination="BMO-Uw-y91" kind="relationship" relationship="viewControllers" id="7dq-VI-rcH"/>
+                        <segue destination="hGz-fh-zPe" kind="relationship" relationship="viewControllers" id="UmA-ch-8S1"/>
+                        <segue destination="GFp-Ij-rnr" kind="relationship" relationship="viewControllers" id="rLB-pn-XAJ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dph-EQ-eHc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2671" y="-700"/>
+        </scene>
     </scenes>
     <resources>
         <image name="backbtn" width="121" height="15"/>
         <image name="binarilogo" width="94" height="110"/>
         <image name="binarilogo2" width="99" height="44.333332061767578"/>
+        <image name="blood" width="19.333333969116211" height="24.333333969116211"/>
+        <image name="calender" width="25" height="25"/>
         <image name="complete lbl" width="160" height="19"/>
         <image name="complete_register" width="191.33332824707031" height="238.33332824707031"/>
         <image name="docbtn1" width="136" height="200"/>
+        <image name="hospital" width="27" height="27"/>
+        <image name="house" width="25" height="24"/>
         <image name="loginbtn" width="256" height="39"/>
         <image name="nextbtn" width="268" height="39"/>
         <image name="perbtn2" width="136" height="200"/>
+        <image name="ping" width="17.333333969116211" height="24.666666030883789"/>
+        <image name="profile" width="86" height="86.666664123535156"/>
         <image name="signupbtn" width="125" height="15"/>
         <image name="xmark.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">

@@ -71,6 +71,9 @@ class loginVC: UIViewController {
                 if let nsDic = value as? NSDictionary{
                     print(nsDic)
                     if let message = nsDic["message"] as? String {
+                        if (message == "로그인 성공!") {
+                            self.performSegue(withIdentifier: "login_success", sender: self)
+                        }
                         let alart = UIAlertController(title: nil, message: message, preferredStyle: .alert)
                         alart.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
                         self.present(alart, animated: true)
@@ -84,5 +87,8 @@ class loginVC: UIViewController {
                 return
             }
         }
+    }
+    @IBAction func sucbtn(_ sender: Any) {
+        self.performSegue(withIdentifier: "login_success", sender: self)
     }
 }
