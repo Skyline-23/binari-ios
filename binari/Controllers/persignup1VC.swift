@@ -139,7 +139,7 @@ class persignup1VC: UIViewController, UITextFieldDelegate {
                         floatingLabelTextField.errorMessage = "이메일 형식이 아닙니다!"
                     }
                     else {
-                        // The error message will only disappear when we reset it to nil or empty string
+                        // 에러가 아닐 경우 기본 메세지를 그대로 출력
                         floatingLabelTextField.errorMessage = ""
                     }
                 }

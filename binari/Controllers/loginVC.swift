@@ -14,6 +14,7 @@ class loginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.isNavigationBarHidden = true
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "loginbg.png")!)
         buildtextfield()
         Idtextfield.keyboardType = .asciiCapable
@@ -74,10 +75,12 @@ class loginVC: UIViewController {
                         if (message == "로그인 성공!") {
                             self.performSegue(withIdentifier: "login_success", sender: self)
                         }
+                        else {
                         let alart = UIAlertController(title: nil, message: message, preferredStyle: .alert)
                         alart.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
                         self.present(alart, animated: true)
                         return
+                        }
                     }
                 }
             case .failure(_):
