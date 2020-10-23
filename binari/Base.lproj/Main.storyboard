@@ -557,7 +557,7 @@
         <image name="perbtn2" width="136" height="200"/>
         <image name="ping" width="17.333333969116211" height="24.666666030883789"/>
         <image name="profile" width="86" height="86.666664123535156"/>
-        <image name="sidemenubtn" width="23" height="18"/>
+        <image name="sidemenubtn" width="22.666666030883789" height="17.666666030883789"/>
         <image name="signupbtn" width="125" height="15"/>
         <image name="xmark.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
