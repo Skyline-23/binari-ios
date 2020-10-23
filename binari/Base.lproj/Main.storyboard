@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G18-eH-ROf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fxA-ws-Ljg">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
@@ -493,31 +493,21 @@
             </objects>
             <point key="canvasLocation" x="3710" y="1567"/>
         </scene>
-        <!--Side Menu Navigation Controller-->
-        <scene sceneID="wnR-kY-bFm">
+        <!--Navigation Controller-->
+        <scene sceneID="oah-EI-Wnk">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G18-eH-ROf" customClass="SideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SLt-lc-OPo">
+                <navigationController id="fxA-ws-Ljg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="G95-HV-fjI">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <nil name="viewControllers"/>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ume-h6-xv6">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="presentDuration">
-                            <real key="value" value="0.0"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6m2-i3-N9n"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="p2V-NN-dct"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UOP-Pw-hCh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vpu-Vc-fG3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="863.768115942029" y="130.58035714285714"/>
+            <point key="canvasLocation" x="935" y="130"/>
         </scene>
         <!--Tab BarVC-->
         <scene sceneID="JA2-9a-NM5">
@@ -525,7 +515,8 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="c6Q-KH-qGS" customClass="TabBarVC" customModule="binari" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="oMr-Gs-IZY">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="line.horizontal.3" catalog="system" id="KyO-ws-prj">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="sidemenubtn" id="KyO-ws-prj">
+                            <color key="tintColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="didTabMenu:" destination="c6Q-KH-qGS" id="DsQ-Ia-Q6w"/>
                             </connections>
@@ -547,7 +538,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dph-EQ-eHc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2671" y="-700"/>
+            <point key="canvasLocation" x="2631" y="-491"/>
         </scene>
     </scenes>
     <resources>
@@ -561,12 +552,12 @@
         <image name="docbtn1" width="136" height="200"/>
         <image name="hospital" width="27" height="27"/>
         <image name="house" width="25" height="24"/>
-        <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <image name="loginbtn" width="256" height="39"/>
         <image name="nextbtn" width="268" height="39"/>
         <image name="perbtn2" width="136" height="200"/>
         <image name="ping" width="17.333333969116211" height="24.666666030883789"/>
         <image name="profile" width="86" height="86.666664123535156"/>
+        <image name="sidemenubtn" width="23" height="18"/>
         <image name="signupbtn" width="125" height="15"/>
         <image name="xmark.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">

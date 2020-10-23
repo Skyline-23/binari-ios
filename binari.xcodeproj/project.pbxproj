@@ -18,7 +18,8 @@
 		62551C4C253064F9009C150A /* binari.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62551C4A253064F9009C150A /* binari.xcdatamodeld */; };
 		62551C4E253064FB009C150A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62551C4D253064FB009C150A /* Assets.xcassets */; };
 		62551C51253064FB009C150A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62551C4F253064FB009C150A /* LaunchScreen.storyboard */; };
-		62B9014925419373006B734A /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B9014825419373006B734A /* SlideViewController.swift */; };
+		62CBE8B42542A59D00F8E835 /* sidemenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBE8B22542A59D00F8E835 /* sidemenuVC.swift */; };
+		62CBE8B52542A59D00F8E835 /* sidemenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62CBE8B32542A59D00F8E835 /* sidemenuVC.xib */; };
 		62E69599253FCEFB00A94CF2 /* mainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E69598253FCEFB00A94CF2 /* mainVC.swift */; };
 		62EC842C253DE33100B8EDEF /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC842B253DE33100B8EDEF /* TabBarVC.swift */; };
 		F2C8091A282CDFC944AF2714 /* Pods_binari.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5352BA615FD026F26E9E759C /* Pods_binari.framework */; };
@@ -39,7 +40,8 @@
 		62551C4D253064FB009C150A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62551C50253064FB009C150A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62551C52253064FB009C150A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62B9014825419373006B734A /* SlideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideViewController.swift; sourceTree = "<group>"; };
+		62CBE8B22542A59D00F8E835 /* sidemenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sidemenuVC.swift; sourceTree = "<group>"; };
+		62CBE8B32542A59D00F8E835 /* sidemenuVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = sidemenuVC.xib; sourceTree = "<group>"; };
 		62E69598253FCEFB00A94CF2 /* mainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainVC.swift; sourceTree = "<group>"; };
 		62EC842B253DE33100B8EDEF /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		9AAD3AEDE7F92195F2BB72F5 /* Pods-binari.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-binari.release.xcconfig"; path = "Target Support Files/Pods-binari/Pods-binari.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 		62181D492531594E0088E027 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				62CBE8B12542A57F00F8E835 /* sidemenu */,
 				62551C45253064F9009C150A /* loginVC.swift */,
 				62181D462531592E0088E027 /* signup1VC.swift */,
 				620F247E2531E5C20033663D /* persignup1VC.swift */,
@@ -76,7 +79,6 @@
 				620F24812531E6BD0033663D /* docsignupVC1.swift */,
 				62EC842B253DE33100B8EDEF /* TabBarVC.swift */,
 				62E69598253FCEFB00A94CF2 /* mainVC.swift */,
-				62B9014825419373006B734A /* SlideViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -112,6 +114,15 @@
 				62551C4A253064F9009C150A /* binari.xcdatamodeld */,
 			);
 			path = binari;
+			sourceTree = "<group>";
+		};
+		62CBE8B12542A57F00F8E835 /* sidemenu */ = {
+			isa = PBXGroup;
+			children = (
+				62CBE8B22542A59D00F8E835 /* sidemenuVC.swift */,
+				62CBE8B32542A59D00F8E835 /* sidemenuVC.xib */,
+			);
+			path = sidemenu;
 			sourceTree = "<group>";
 		};
 		9960AAAA5B99F03E8240E88E /* Pods */ = {
@@ -184,6 +195,7 @@
 			files = (
 				62551C51253064FB009C150A /* LaunchScreen.storyboard in Resources */,
 				62551C4E253064FB009C150A /* Assets.xcassets in Resources */,
+				62CBE8B52542A59D00F8E835 /* sidemenuVC.xib in Resources */,
 				62551C49253064F9009C150A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,13 +251,13 @@
 			files = (
 				62551C4C253064F9009C150A /* binari.xcdatamodeld in Sources */,
 				62551C46253064F9009C150A /* loginVC.swift in Sources */,
-				62B9014925419373006B734A /* SlideViewController.swift in Sources */,
 				62181D472531592E0088E027 /* signup1VC.swift in Sources */,
 				62551C42253064F9009C150A /* AppDelegate.swift in Sources */,
 				62EC842C253DE33100B8EDEF /* TabBarVC.swift in Sources */,
 				62551C44253064F9009C150A /* SceneDelegate.swift in Sources */,
 				62121BEB253B483D003B7C6F /* persignup2VC.swift in Sources */,
 				62E69599253FCEFB00A94CF2 /* mainVC.swift in Sources */,
+				62CBE8B42542A59D00F8E835 /* sidemenuVC.swift in Sources */,
 				620F24822531E6BD0033663D /* docsignupVC1.swift in Sources */,
 				620F247F2531E5C20033663D /* persignup1VC.swift in Sources */,
 			);
