@@ -27,12 +27,11 @@ class TabBarVC: UITabBarController {
         let sideNavigation = SideMenuNavigationController(rootViewController: sideMenu)
         
         //세팅하기
-        sideNavigation.blurEffectStyle = UIBlurEffect.Style(rawValue: Int(0.4))
-        sideNavigation.pushStyle = .default
-        sideNavigation.leftSide = true
         SideMenuManager.default.leftMenuNavigationController = sideNavigation
+        sideNavigation.leftSide = true
+        sideNavigation.blurEffectStyle = UIBlurEffect.Style(rawValue: Int(5))
         sideNavigation.presentationStyle = .menuSlideIn
-        sideNavigation.menuWidth = (self.view.frame.width / 2)
+        sideNavigation.menuWidth = (self.view.frame.width / 2) - 20
         sideNavigation.presentingViewControllerUseSnapshot = true
         sideNavigation.statusBarEndAlpha = 0
         

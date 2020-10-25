@@ -70,9 +70,13 @@ class loginVC: UIViewController {
             switch response.result {
             case .success(let value):
                 if let nsDic = value as? NSDictionary{
-                    print(nsDic)
+                    let data = nsDic["data"] as? NSDictionary
+                    let user = data?["user"] as? NSDictionary
                     if let message = nsDic["message"] as? String {
                         if (message == "로그인 성공!") {
+                            let ad = UIApplication.shared.delegate as? AppDelegate
+                            print(user?["name"] as Any)
+                            ad?.name = user?["name"] as? String
                             self.performSegue(withIdentifier: "login_success", sender: self)
                         }
                         else {

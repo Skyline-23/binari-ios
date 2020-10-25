@@ -9,16 +9,24 @@ import UIKit
 import SideMenu
 
 class sidemenuVC: UIViewController {
-
+    @IBOutlet weak var namelbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let ad = UIApplication.shared.delegate as? AppDelegate
+        print(ad?.name ?? String.self)
+        namelbl.text = ad?.name
         // Do any additional setup after loading the view.
     }
-
-
-    @IBAction func btncliked(_ sender: Any) {
+    @IBAction func backbtnclicked(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+
+    @IBAction func logoutbtnclicked(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let back = (storyboard.instantiateViewController(withIdentifier: "loginVC")) as! loginVC
+        show(back, sender: self)
     }
     /*
     // MARK: - Navigation

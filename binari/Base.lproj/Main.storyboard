@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--LoginVC-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="loginVC" customModule="binari" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginVC" id="BYZ-38-t0r" customClass="loginVC" customModule="binari" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,6 +96,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yTp-fc-YqH" secondAttribute="bottom" constant="20" id="y4E-ji-qio"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Q4W-F9-gVB"/>
                     <navigationItem key="navigationItem" id="Bao-6E-V6p"/>
                     <connections>
                         <outlet property="Idtextfield" destination="ZCH-Sd-uIU" id="SXj-ev-Rbn"/>
@@ -515,7 +516,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="c6Q-KH-qGS" customClass="TabBarVC" customModule="binari" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="oMr-Gs-IZY">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="sidemenubtn" id="KyO-ws-prj">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="line.horizontal.3" catalog="system" id="KyO-ws-prj">
                             <color key="tintColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="didTabMenu:" destination="c6Q-KH-qGS" id="DsQ-Ia-Q6w"/>
@@ -552,12 +553,12 @@
         <image name="docbtn1" width="136" height="200"/>
         <image name="hospital" width="27" height="27"/>
         <image name="house" width="25" height="24"/>
+        <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <image name="loginbtn" width="256" height="39"/>
         <image name="nextbtn" width="268" height="39"/>
         <image name="perbtn2" width="136" height="200"/>
         <image name="ping" width="17.333333969116211" height="24.666666030883789"/>
         <image name="profile" width="86" height="86.666664123535156"/>
-        <image name="sidemenubtn" width="22.666666030883789" height="17.666666030883789"/>
         <image name="signupbtn" width="125" height="15"/>
         <image name="xmark.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
