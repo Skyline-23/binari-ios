@@ -14,7 +14,6 @@ class sidemenuVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let ad = UIApplication.shared.delegate as? AppDelegate
-        print(ad?.name ?? String.self)
         namelbl.text = ad?.name
         // Do any additional setup after loading the view.
     }

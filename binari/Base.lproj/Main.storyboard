@@ -181,19 +181,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainbg" translatesAutoresizingMaskIntoConstraints="NO" id="aD4-Nf-0qx">
+                                <rect key="frame" x="0.0" y="88" width="390" height="233"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="233" id="cwn-wn-buf"/>
+                                </constraints>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="EGY-iK-wak">
-                                <rect key="frame" x="27" y="165" width="86" height="86"/>
+                                <rect key="frame" x="27" y="112" width="86" height="86"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="86" id="K6Y-1u-ZRR"/>
                                     <constraint firstAttribute="height" constant="86" id="Otg-Z2-bFx"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main-banner" translatesAutoresizingMaskIntoConstraints="NO" id="JSZ-Lz-WA8">
+                                <rect key="frame" x="39" y="225" width="312" height="179"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="312" id="Hel-FB-NCJ"/>
+                                    <constraint firstAttribute="height" constant="179" id="nBw-hX-OVI"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4Dd-7k-kjX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="JSZ-Lz-WA8" firstAttribute="centerX" secondItem="5JE-rs-fw2" secondAttribute="centerX" id="ABW-xS-p2q"/>
+                            <constraint firstItem="aD4-Nf-0qx" firstAttribute="leading" secondItem="4Dd-7k-kjX" secondAttribute="leading" id="B6w-2r-eXe"/>
+                            <constraint firstItem="aD4-Nf-0qx" firstAttribute="centerX" secondItem="5JE-rs-fw2" secondAttribute="centerX" id="GKG-yc-7Vq"/>
+                            <constraint firstItem="JSZ-Lz-WA8" firstAttribute="top" secondItem="4Dd-7k-kjX" secondAttribute="top" constant="137" id="TWS-Jp-hSH"/>
                             <constraint firstItem="EGY-iK-wak" firstAttribute="leading" secondItem="4Dd-7k-kjX" secondAttribute="leading" constant="27" id="XTN-Wg-OUm"/>
-                            <constraint firstItem="EGY-iK-wak" firstAttribute="top" secondItem="4Dd-7k-kjX" secondAttribute="top" constant="77" id="tJ9-qA-Slh"/>
+                            <constraint firstItem="4Dd-7k-kjX" firstAttribute="trailing" secondItem="aD4-Nf-0qx" secondAttribute="trailing" id="f4F-Iq-gtg"/>
+                            <constraint firstItem="aD4-Nf-0qx" firstAttribute="top" secondItem="4Dd-7k-kjX" secondAttribute="top" id="odN-Ks-26v"/>
+                            <constraint firstItem="EGY-iK-wak" firstAttribute="top" secondItem="4Dd-7k-kjX" secondAttribute="top" constant="24" id="tJ9-qA-Slh"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="house" selectedImage="house" id="p3P-aS-dS8"/>
@@ -210,6 +229,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" id="gRh-ox-Jld"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="pinkbg" destination="aD4-Nf-0qx" id="bd0-ab-ROg"/>
                         <outlet property="profile" destination="EGY-iK-wak" id="MYz-Th-5Ix"/>
                     </connections>
                 </viewController>
@@ -293,15 +313,15 @@
                             <constraint firstItem="maW-r1-9oz" firstAttribute="centerX" secondItem="XL3-Tv-dUp" secondAttribute="centerX" id="4e9-jz-Jol"/>
                             <constraint firstItem="MjF-hx-M3E" firstAttribute="top" secondItem="Bu0-js-gPi" secondAttribute="top" constant="237" id="9fY-Vk-G7m"/>
                             <constraint firstItem="s8p-hU-DEv" firstAttribute="centerX" secondItem="XL3-Tv-dUp" secondAttribute="centerX" id="D8w-Cv-eh6"/>
-                            <constraint firstItem="Bu0-js-gPi" firstAttribute="trailing" secondItem="tR8-1s-NPE" secondAttribute="trailing" constant="39" id="DGS-1t-hhU"/>
+                            <constraint firstItem="tR8-1s-NPE" firstAttribute="centerX" secondItem="XL3-Tv-dUp" secondAttribute="centerX" constant="89" id="EFZ-0O-4d2"/>
                             <constraint firstItem="gwE-Td-Shl" firstAttribute="top" secondItem="XL3-Tv-dUp" secondAttribute="topMargin" constant="179" id="Fi6-HZ-0Y3"/>
                             <constraint firstItem="gwE-Td-Shl" firstAttribute="centerX" secondItem="XL3-Tv-dUp" secondAttribute="centerX" id="QRg-Kt-1Ci"/>
                             <constraint firstItem="tR8-1s-NPE" firstAttribute="top" secondItem="Bu0-js-gPi" secondAttribute="top" constant="237" id="SOk-Qr-hNU"/>
                             <constraint firstItem="s8p-hU-DEv" firstAttribute="top" secondItem="Bu0-js-gPi" secondAttribute="top" constant="544" id="c0y-Ob-jTI"/>
                             <constraint firstItem="LoM-KU-vx1" firstAttribute="top" secondItem="Bu0-js-gPi" secondAttribute="top" constant="500" id="ewi-jG-YV2"/>
                             <constraint firstItem="maW-r1-9oz" firstAttribute="top" secondItem="Bu0-js-gPi" secondAttribute="top" constant="67.890000000000001" id="q08-Gy-3zO"/>
+                            <constraint firstItem="MjF-hx-M3E" firstAttribute="centerX" secondItem="XL3-Tv-dUp" secondAttribute="centerX" constant="-89" id="sJs-Tl-hiA"/>
                             <constraint firstItem="LoM-KU-vx1" firstAttribute="centerX" secondItem="XL3-Tv-dUp" secondAttribute="centerX" id="xiX-rt-gsm"/>
-                            <constraint firstItem="MjF-hx-M3E" firstAttribute="leading" secondItem="Bu0-js-gPi" secondAttribute="leading" constant="39" id="ztv-iq-lOd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Cnb-gv-tKj"/>
@@ -527,7 +547,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" red="0.98986881969999996" green="0.48671120410000002" blue="0.48626041409999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.86840695140000002" green="0.35738092659999998" blue="0.35684591529999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="Yfp-79-oqz" kind="relationship" relationship="viewControllers" id="hUn-BN-9c2"/>
@@ -555,6 +575,8 @@
         <image name="house" width="25" height="24"/>
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <image name="loginbtn" width="256" height="39"/>
+        <image name="main-banner" width="312" height="179"/>
+        <image name="mainbg" width="360" height="233"/>
         <image name="nextbtn" width="268" height="39"/>
         <image name="perbtn2" width="136" height="200"/>
         <image name="ping" width="17.333333969116211" height="24.666666030883789"/>

@@ -15,7 +15,7 @@ class loginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.isNavigationBarHidden = true
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "loginbg.png")!)
+        assignbackground()
         buildtextfield()
         Idtextfield.keyboardType = .asciiCapable
         PWtextfield.keyboardType = .asciiCapable
@@ -71,11 +71,11 @@ class loginVC: UIViewController {
             case .success(let value):
                 if let nsDic = value as? NSDictionary{
                     let data = nsDic["data"] as? NSDictionary
+                    print(data!)
                     let user = data?["user"] as? NSDictionary
                     if let message = nsDic["message"] as? String {
                         if (message == "로그인 성공!") {
                             let ad = UIApplication.shared.delegate as? AppDelegate
-                            print(user?["name"] as Any)
                             ad?.name = user?["name"] as? String
                             self.performSegue(withIdentifier: "login_success", sender: self)
                         }
@@ -98,4 +98,17 @@ class loginVC: UIViewController {
     @IBAction func sucbtn(_ sender: Any) {
         self.performSegue(withIdentifier: "login_success", sender: self)
     }
+    
+    func assignbackground(){
+            let background = UIImage(named: "background")
+
+            var imageView : UIImageView!
+            imageView = UIImageView(frame: view.bounds)
+            imageView.contentMode =  UIView.ContentMode.scaleAspectFill
+            imageView.clipsToBounds = true
+            imageView.image = background
+            imageView.center = view.center
+            view.addSubview(imageView)
+            self.view.sendSubviewToBack(imageView)
+        }
 }
