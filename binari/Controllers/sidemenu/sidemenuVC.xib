@@ -27,10 +27,10 @@
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaF-4q-fnb">
-                    <rect key="frame" x="18.666666666666668" y="21.666666666666671" width="21.000000000000004" height="16"/>
+                    <rect key="frame" x="18.666666666666668" y="21.666666666666671" width="18.000000000000004" height="16"/>
                     <constraints>
+                        <constraint firstAttribute="width" constant="18" id="EUK-t8-mJQ"/>
                         <constraint firstAttribute="height" constant="16" id="rMY-je-UhN"/>
-                        <constraint firstAttribute="width" constant="21" id="vtG-7c-TkG"/>
                     </constraints>
                     <color key="tintColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="Button" image="xmark" catalog="system"/>
@@ -136,7 +136,7 @@
                 <constraint firstItem="aGP-DW-cxI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="268" id="wbn-UT-cb3"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-            <point key="canvasLocation" x="-75.362318840579718" y="98.4375"/>
+            <point key="canvasLocation" x="-75.384615384615387" y="98.104265402843595"/>
         </view>
     </objects>
     <resources>
